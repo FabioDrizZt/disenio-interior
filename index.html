@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Diseño Interior</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+  </head>
+  <body>
+    <!-- Sidebar/menu -->
+    <nav
+      class="untref-sidebar untref-red untref-collapse untref-top untref-large untref-padding"
+      style="z-index: 3; width: 300px; font-weight: bold"
+      id="mySidebar"
+    >
+      <br />
+      <a
+        href="javascript:void(0)"
+        onclick="untref_close()"
+        class="untref-button untref-hide-large untref-display-topleft"
+        style="width: 100%; font-size: 22px"
+        >Close Menu</a
+      >
+      <div class="untref-container">
+        <h3 class="untref-padding-64">
+          <b>UNTREF</b>
+        </h3>
+      </div>
+      <div class="untref-bar-block">
+        <a
+          href="#"
+          onclick="untref_close()"
+          class="untref-bar-item untref-button untref-hover-white"
+          >Home</a
+        >
+        <a
+          href="#showcase"
+          onclick="untref_close()"
+          class="untref-bar-item untref-button untref-hover-white"
+          >Showcase</a
+        >
+        <a
+          href="#services"
+          onclick="untref_close()"
+          class="untref-bar-item untref-button untref-hover-white"
+          >Services</a
+        >
+        <a
+          href="#designers"
+          onclick="untref_close()"
+          class="untref-bar-item untref-button untref-hover-white"
+          >Designers</a
+        >
+        <a
+          href="#packages"
+          onclick="untref_close()"
+          class="untref-bar-item untref-button untref-hover-white"
+          >Packages</a
+        >
+        <a
+          href="#contact"
+          onclick="untref_close()"
+          class="untref-bar-item untref-button untref-hover-white"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header
+      class="untref-container untref-top untref-hide-large untref-red untref-xlarge untref-padding"
+    >
+      <a
+        href="javascript:void(0)"
+        class="untref-button untref-red untref-margin-right"
+        onclick="untref_open()"
+        >&#9776;</a
+      >
+      <span>UNTREF</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="untref-overlay untref-hide-large"
+      onclick="untref_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- !PAGE CONTENT! -->
+    <main class="untref-main" style="margin-left: 340px; margin-right: 40px">
+      <!-- Header -->
+      <header class="untref-container" style="margin-top: 80px" id="showcase">
+        <h1 class="untref-jumbo"><b>Interior Design</b></h1>
+        <h1 class="untref-xxxlarge untref-text-red"><b>Showcase.</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="untref-round" />
+      </header>
+
+      <!-- Photo grid (modal) -->
+      <section class="untref-row-padding">
+        <div class="untref-half">
+          <img
+            src="./img/kitchenconcrete.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Concrete meets bricks"
+          />
+          <img
+            src="./img/livingroom.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Light, white and tight scandinavian design"
+          />
+          <img
+            src="./img/diningroom.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="White walls with designer chairs"
+          />
+        </div>
+
+        <div class="untref-half">
+          <img
+            src="./img/atrium.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Windows for the atrium"
+          />
+          <img
+            src="./img/bedroom.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Bedroom and office in one space"
+          />
+          <img
+            src="./img/livingroom2.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Scandinavian design"
+          />
+        </div>
+      </section>
+
+      <!-- Modal for full size images on click-->
+      <section
+        id="modal01"
+        class="untref-modal untref-black"
+        style="padding-top: 0"
+        onclick="this.style.display='none'"
+      >
+        <span
+          class="untref-button untref-black untref-xxlarge untref-display-topright"
+          >&times;</span
+        >
+        <div
+          class="untref-modal-content untref-animate-zoom untref-center untref-transparent untref-padding-64"
+        >
+          <img id="img01" class="untref-image" />
+          <p id="caption"></p>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="untref-container" id="services" style="margin-top: 75px">
+        <h1 class="untref-xxxlarge untref-text-red"><b>Services.</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="untref-round" />
+        <p>
+          We are a interior design service that focus on what's best for your
+          home and what's best for you!
+        </p>
+        <p>
+          Some text about our services - what we do and what we offer. We are
+          lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.
+        </p>
+      </section>
+
+      <!-- Designers -->
+      <section class="untref-container" id="designers" style="margin-top: 75px">
+        <h1 class="untref-xxxlarge untref-text-red"><b>Designers.</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="untref-round" />
+        <p>The best team in the world.</p>
+        <p>
+          We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p><b>Our designers are thoughtfully chosen</b>:</p>
+      </section>
+
+      <!-- TODO: The Team -->
+
+      <!-- TODO: Packages / Pricing -->
+
+      <!-- TODO: Contact -->
+    </main>
+
+    <footer
+      class="untref-light-grey untref-container untref-padding-32"
+      style="margin-top: 75px; padding-right: 58px"
+    >
+      <p class="untref-right">Powered by UNTREF</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
