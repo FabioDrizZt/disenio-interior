@@ -15,11 +15,11 @@ El proyecto de Diseño Interior ofrece una plataforma para mostrar los servicios
 
 ## Diseño en Figma
 
-Lo pueden encontrar en el siguiente [link](https://www.figma.com/design/DbyfkAcuvsfwb8t4gktIf9/UNTREF---Dise%C3%B1o-Interior?node-id=0-1&t=upTbdyjoZIAFXsEh-1).
+Lo pueden encontrar en el siguiente [link](https://www.figma.com/design/GD4QEk6pFQWdlCZK5qVloO/Dise%C3%B1o-interior?node-id=0-1&t=eg2tFLWqqsvZq6Rr-1).
 
 ## Instalación
 
-1. Clona este repositorio: `git clone https://github.com/FabioDrizZt/untref-disenio-interior.git`
+1. Clona este repositorio: `git clone https://github.com/FabioDrizZt/disenio-interior.git`
 2. Abre el archivo `index.html` en tu navegador web. Para una mejor experiencia, recomendamos utilizar un servidor local. Puedes usar extensiones como Live Server en Visual Studio Code.
 
 ## Tecnologías Utilizadas
